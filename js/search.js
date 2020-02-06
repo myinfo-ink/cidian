@@ -6,7 +6,7 @@ document.querySelector('#q').oninput = function() {
     if (v === '') return;
 
     for (var i in wordsData) {
-        if (i.indexOf(v) !== -1) {
+        if (i.toUpperCase().indexOf(v.toUpperCase()) !== -1) {
             document.querySelector('#search-result').innerHTML += '<a href="word.html?s=' + i + '"><div>' + i + '</div></a>';
         }
     }
