@@ -8,7 +8,9 @@
         text-align: center;
         padding-top: 20px !important;
     }
+}
 
+@media screen and (max-width: 990px) {
     #banner {
         position: relative !important;
         top: 20px !important;
@@ -75,15 +77,22 @@ header input {
     color: gray;
 }
 
+#title {
+    position: relative;
+    left: 20px;
+}
+
 #exp {
     max-width: 500px;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
 
 #banner {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 500px;
+    max-width: 500px;
     position: absolute;
-    right: 30px;
+    right: 50px;
     margin: auto;
     top: 100px;
     border: 1px solid black;
